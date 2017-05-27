@@ -1,0 +1,172 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#35c21e"
+    android:orientation="vertical"
+    tools:context="com.f4ww4z.soccerscorecounter.MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="11"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/left_score_text"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="0"
+            android:textColor="#ffffff"
+            android:textSize="160sp" />
+
+        <TextView
+            android:id="@+id/right_score_text"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="0"
+            android:textColor="#ffffff"
+            android:textSize="160sp" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="7">
+
+        <Button
+            android:id="@+id/left_score_button"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_marginEnd="8sp"
+            android:layout_marginLeft="20sp"
+            android:layout_marginRight="8sp"
+            android:layout_marginStart="20sp"
+            android:layout_marginTop="24sp"
+            android:layout_weight="1"
+            android:background="@color/hem"
+            android:onClick="leftIncScore"
+            android:text="@string/score_button_text"
+            android:textSize="27sp"/>
+
+        <Button
+            android:id="@+id/right_score_button"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_marginEnd="20sp"
+            android:layout_marginLeft="8sp"
+            android:layout_marginRight="20sp"
+            android:layout_marginStart="8sp"
+            android:layout_marginTop="24sp"
+            android:layout_weight="1"
+            android:background="@color/hem"
+            android:onClick="rightIncScore"
+            android:text="@string/score_button_text"
+            android:textSize="27sp"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="5">
+
+        <Button
+            android:id="@+id/left_yel_card_button"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_marginEnd="8sp"
+            android:layout_marginLeft="20sp"
+            android:layout_marginRight="8sp"
+            android:layout_marginStart="20sp"
+            android:layout_marginTop="14sp"
+            android:layout_weight="1"
+            android:background="@color/yellowish"
+            android:onClick="leftYelInc"
+            android:text=""
+            android:textSize="16sp"/>
+
+        <Button
+            android:id="@+id/right_yel_card_button"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_marginEnd="20sp"
+            android:layout_marginLeft="8sp"
+            android:layout_marginRight="20sp"
+            android:layout_marginStart="8sp"
+            android:layout_marginTop="14sp"
+            android:layout_weight="1"
+            android:background="@color/yellowish"
+            android:onClick="rightYelInc"
+            android:text=""
+            android:textSize="16sp"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="5">
+
+        <Button
+            android:id="@+id/left_red_card_button"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_marginEnd="8sp"
+            android:layout_marginLeft="20sp"
+            android:layout_marginRight="8sp"
+            android:layout_marginStart="20sp"
+            android:layout_marginTop="14sp"
+            android:layout_weight="1"
+            android:background="@color/redish"
+            android:onClick="leftRedInc"
+            android:text=""
+            android:textColor="#ffffff"
+            android:textSize="18sp"
+            android:textStyle="bold"/>
+
+        <Button
+            android:id="@+id/right_red_card_button"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_marginEnd="20sp"
+            android:layout_marginLeft="8sp"
+            android:layout_marginRight="20sp"
+            android:layout_marginStart="8sp"
+            android:layout_marginTop="14sp"
+            android:layout_weight="1"
+            android:background="@color/redish"
+            android:onClick="rightRedInc"
+            android:text=""
+            android:textColor="#ffffff"
+            android:textSize="18sp"
+            android:textStyle="bold"/>
+
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginBottom="16sp"
+        android:layout_marginTop="20sp"
+        android:layout_weight="3">
+
+        <Button
+            android:id="@+id/reset_button"
+            android:layout_width="160sp"
+            android:layout_height="match_parent"
+            android:layout_centerHorizontal="true"
+            android:background="@color/very_grey"
+            android:text="@string/reset_text"
+            android:textColor="#ffffff"
+            android:textSize="18sp"
+            android:onClick="resetButton"/>
+    </RelativeLayout>
+</LinearLayout>
